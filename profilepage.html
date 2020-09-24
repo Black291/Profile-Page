@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page btcearn</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Images\favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300&family=Kufam:ital,wght@0,500;0,600;1,600&family=Mulish:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+     <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,300&family=Kufam:ital,wght@0,500;0,600;1,600&family=Mulish:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- bootstrap link -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- stylesheet -->
+    <link rel="stylesheet" href="profilepage.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600;700&family=Kumbh+Sans:wght@300;400&family=Roboto+Mono:ital,wght@0,200;0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="row jumbotron jumbotron-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <h1 class="display-4"><i class="fas fa-user-circle"></i> <em> My Profile </em></h1>
+        </div>
+      </div>  
+      <!-- </header>  -->
+      <div class="s-layout__sidebar">
+        <a class="s-sidebar__trigger" href="#0">
+           <i class="fa fa-bars"></i>
+        </a>
+        
+        <nav class="s-sidebar__nav">
+          <ul>
+            <li>
+              <a class="s-sidebar__nav-link" href="/index.html">
+                 <i class="fa fa-home"></i><em>Home</em>
+              </a>
+           </li>
+           <li>
+              <a class="s-sidebar__nav-link" href="#0">
+                <i class="fa fa-user"></i><em>My Profile</em>
+              </a>
+           </li>
+           <li>
+              <a class="s-sidebar__nav-link" href="Admin dashboard\dashboard.html">
+                 <i class="fa fa-camera"></i><em>Dashboard</em>
+              </a>
+           </li>
+           <li>
+            <a class="s-sidebar__nav-link" href="#0">
+              <i class="fa fa-user"></i><em>My Tree</em>
+            </a>
+         </li>
+           <li>
+            <a class="s-sidebar__nav-link" href="#0">
+              <i class="fa fa-user"></i><em>Get Cupon code</em>
+            </a>
+         </li>
+          </ul>
+        </nav>
+      </div>
+     
+      <main class="s-layout__content">
+        <div id="profile" class="col-xl-8 order-xl-1">
+          <div class="card-body"> 
+            <form>
+             <h6 class="info">User information</h6>
+             <div class="pl-lg-4">
+               <div class="row">
+                 <div class="col-lg-6">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-username"><strong>Username</strong></label>
+                     <input type="text" id="input-username" class=" form-control" placeholder="Username" value="lucky.jesse" disabled>
+                   </div>
+                 </div>
+                 <div class="col-lg-6">
+                   <div class="form-group">
+                     <label class="form-control-label" for="input-email"><strong>Email Address</strong></label>
+                     <input type="email" id="input-email" class=" form-control" placeholder="jesse@example.com" disabled>
+                   </div>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col-lg-6">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-first-name"><strong>First Name</strong></label>
+                     <input type="text" id="input-first-name" class="form-control" placeholder="First name" value="Lucky" disabled>
+                   </div>
+                 </div>
+                 <div class="col-lg-6">
+                   <div class="form-group focused">
+                     <label class="form-control-label" for="input-last-name"><strong>Last Name</strong></label>
+                     <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value="Jesse" disabled>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <hr class="my-4">
+             <!-- Information -->
+             <h6 class="info">General Information</h6>
+             <div class="pl-lg-4">
+               <div class="row">
+                 <div class="col-md-12">
+                    <div class="form-group focused">
+                     <label class="form-control-label" for="input-address"><strong>Refferal Link</strong></label>
+                     <input id="refferal-link" class="form-control" placeholder="link" value="https//." type="text" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                     <div class="form-group focused">
+                     <label class="form-control-label" for="input-address"><strong>Wallet ID</strong></label>
+                      <input id="refferal-link" class="form-control" placeholder="link" value="https//." type="text" disabled>
+                     </div>
+                   </div>
+                 </div>
+              </div>
+            </form>
+        </div>
+        <section>
+          <div class="container-fluid padding house"></div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="money-2696228_1920.jpg" alt="img">
+                  <div class="card-body">
+                    <h4 class="card-title">Plan</h4>
+                 
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="bitcoin-3024279_1920.jpg" alt="img">
+                  <div class="card-body">
+                    <h4 class="card-title">BTC Rate</h4>
+          
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img class="card-img-top" src="Ethereum.jpg" alt="img">
+                  <div class="card-body">
+                    <h4 class="card-title">ETH Rate</h4>
+           
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div class="card">
+                  <img class="card-img-top" src="matrix-1013612_1920.jpg" alt="img">
+                  <div class="card-body">
+                    <h4 class="card-title">Get Coupon Code</h4>
+                    <a href="#" class="btn btn-outline-secondary downline">Get Coupon Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="card">
+                  <img class="card-img-top" src="success-4578800_1920.jpg" alt="img">
+                  <div class="card-body">
+                    <h4 class="card-title">Level</h4>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+  </div>
+  <!-- bootstrap script -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

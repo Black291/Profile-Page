@@ -1,0 +1,320 @@
+/* side bar */
+/* Primary Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    /* font-family: sans-serif; */
+    font-size: 1em;
+    background-image: url("bitcoin-2.jpg");
+    background-color: #272727;
+    object-fit: cover;
+    /* max-width: 100%; */
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ h1 {
+   font-size: 1.4em;
+ }
+ 
+ em {
+    font-style: normal;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: inherit;
+ } 
+ 
+ /* Layout */
+ .s-layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+ }
+ 
+ .s-layout__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+ }
+ 
+ /* Sidebar */
+ .s-sidebar__trigger {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background: #192b3c;
+ }
+ 
+ .s-sidebar__trigger > i {
+    display: inline-block;
+    margin: 1.5em 0 0 1.5em;
+    color: #f07ab0;
+ }
+ 
+ .s-sidebar__nav {
+    position: fixed;
+    top: 0;
+    left: -15em;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 15em;
+    height: 100%;
+    background: #243e56;
+    color: rgba(255, 255, 255, 0.7);
+ }
+ 
+ .s-sidebar__nav:hover,
+ .s-sidebar__nav:focus,
+ .s-sidebar__trigger:focus + .s-sidebar__nav,
+ .s-sidebar__trigger:hover + .s-sidebar__nav {
+    left: 0;
+ }
+ 
+ .s-sidebar__nav ul {
+    position: absolute;
+    top: 4em;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 15em;
+ }
+ 
+ .s-sidebar__nav ul li {
+    width: 100%;
+ }
+ 
+ .s-sidebar__nav-link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 4em;
+ }
+ 
+ .s-sidebar__nav-link em {
+    position: absolute;
+    top: 50%;
+    left: 4em;
+    transform: translateY(-50%);
+ }
+ 
+ .s-sidebar__nav-link:hover {
+    background: #4d6276;
+ }
+ 
+ .s-sidebar__nav-link > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+ }
+ 
+ .s-sidebar__nav-link > i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ /* Mobile First */
+ @media (min-width: 42em) {
+   .s-layout__content {
+      margin-left: 4em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      width: 4em;
+      position: absolute;
+      z-index: 2;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+      position: fixed;
+   }
+    
+    .s-sidebar__nav:hover,
+    .s-sidebar__nav:focus,
+    .s-sidebar__trigger:hover + .s-sidebar__nav,
+    .s-sidebar__trigger:focus + .s-sidebar__nav {
+       width: 15em;
+    }
+ }
+ 
+ @media (min-width: 68em) {
+    .s-layout__content {
+       margin-left: 15em;
+    }
+    
+    /* Sidebar */
+     .s-sidebar__trigger {
+       display: none
+    } 
+    
+    .s-sidebar__nav {
+       width: 15em;
+    }
+    
+    .s-sidebar__nav ul {
+       top: 1.3em;
+    }
+ }
+
+.jumbotron h1{
+   font-family: 'Josefin Slab', 'Serif';
+   font-size: 5rem;
+   font-weight: 500;
+   color: #272727;
+   display: flex;
+   justify-content: center;
+}
+
+.display-4{
+   display: flex;
+   justify-content: center;
+}
+
+.display-4 .fa{
+   margin: 0 5px 0 0;
+}
+
+.header{
+   width: 100%;
+   height: 100%;
+}
+
+
+.display-4{
+   font-size: 5rem;
+   font-family: 'Mulish', 'sans-serif';
+}
+
+#profile{
+   align-self: center;
+   margin-left: 5rem;
+   margin-top: 0;
+}
+
+.col-xl-8{
+    align-self: center;
+}
+
+.info{
+   font-family: 'Kufam', 'Serif';
+   color: white;
+   font-size: 20px;
+   font-weight: 200;
+}
+
+.form-control-label {
+   font-family: 'Mulish', 'Serif';
+   color: white;
+   font-weight: 400;
+}
+
+input, textarea, .btn, .card-title {
+   font-family: 'Kufam', 'Serif';
+}
+
+.fa-user-circle {
+   color: #105392;
+}
+
+.card-img-top {
+   width: 100%;
+   height: 15vw;
+   object-fit: cover;
+}
+
+.two-col {
+   display: flex;
+   width: 98%;
+   margin-left: 6rem;
+   height: 15vw;
+   object-fit: cover; 
+
+}
+
+
+/* @media screen and (max-width: 992px) {
+   .jumbotron {
+      width: 150%;
+      
+   }
+
+  html {
+     overflow-x: hidden;
+  }
+
+  .container {
+   padding-right: 5rem;
+   width: auto;
+   }
+
+   .house h4{
+      font-size: 6px;
+   }
+
+   .two-col {
+      width: 45rem;
+      padding-right: 6rem;
+      height: 15vw;
+      object-fit: cover; 
+   }
+} */
+
+@media screen and (max-width: 700px){
+   html{
+      /* max-width: 100% !important; */
+      overflow-x: hidden;
+   }
+
+   .jumbotron{
+      width: 110%;
+      padding-top: 5rem;
+      padding-left: 5rem;
+      justify-content: center;
+   }
+   .jumbotron h1 {
+      padding-right: 5rem;
+   }
+
+   main{
+      /* width: 90%; */
+      /* margin: 0 auto; */
+      position: absolute;
+      z-index: -2;
+   }
+  
+   .card{
+      margin-bottom: 3rem;
+   }
+
+}
+
+/* i-pad & tablet */
+@media screen and (max-width: 1500px){
+   main{
+      position: absolute;
+      z-index: -2;
+   }
+
+   .jumbotron{
+      justify-content: center;
+   }
+
+   .card{
+      margin-bottom: 3rem;
+   }
+}
